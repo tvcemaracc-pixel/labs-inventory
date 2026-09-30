@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<!-- saved from url=(0070)file:///C:/Users/ACER/Downloads/Asset_Inventory_Control_Modern_v2.html -->
-<html lang="id"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="id">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Asset &amp; Inventory Control | Audit Edition</title>
+<title>Asset & Inventory Control | Audit Edition</title>
 <style>
 :root{
  --navy:#0b1f33;--navy2:#102b45;--blue:#1769aa;--cyan:#0e7490;
@@ -88,75 +88,75 @@ input,select,textarea{border-radius:12px!important}
 
 <header class="topbar">
  <div class="brand">
-  
-  <div><strong>ASSET &amp; INVENTORY CONTROL</strong><small>Controlled Document • Audit Edition</small></div>
+ 
+ <div><strong>ASSET & INVENTORY CONTROL</strong><small>Controlled Document • Audit Edition</small></div>
  </div>
- <div class="doc-meta"><span class="pill">DOC: FM-19</span><span class="pill">REV: 01</span><span class="pill" id="online" style="color: rgb(134, 239, 172);">● ONLINE</span><span class="pill" id="clock">20.27.38</span></div>
+ <div class="doc-meta"><span class="pill"></span><span class="pill"></span><span class="pill" id="online">● ONLINE</span><span class="pill" id="clock">--:--:--</span></div>
 </header>
 
 <nav class="nav">
  <button class="active" onclick="tab('dashboard',this)">Dashboard</button>
- <button onclick="tab('identitas',this)" class="">Identitas &amp; Aset</button>
- <button onclick="tab('gps',this)" class="">GPS &amp; Foto</button>
- <button onclick="tab('maintenance',this)" class="">Pemeliharaan</button>
- <button onclick="tab('stock',this)" class="">Stock Opname</button>
- <button onclick="tab('disposal',this)" class="">Disposal / Loss</button>
- <button onclick="tab('approval',this)" class="">Pengesahan</button>
+ <button onclick="tab('identitas',this)">Identitas & Aset</button>
+ <button onclick="tab('gps',this)">GPS & Foto</button>
+ <button onclick="tab('maintenance',this)">Pemeliharaan</button>
+ <button onclick="tab('stock',this)">Stock Opname</button>
+ <button onclick="tab('disposal',this)">Disposal / Loss</button>
+ <button onclick="tab('approval',this)">Pengesahan</button>
 </nav>
 
 <main class="container">
 <div class="audit-head">
- <div><h1>Asset &amp; Inventory Control</h1><p>Formulir pengendalian aset dengan bukti objektif, traceability, verifikasi fisik, dan riwayat perubahan.</p></div>
+ <div><h1>Asset & Inventory Control</h1><p>Formulir pengendalian aset dengan bukti objektif, traceability, verifikasi fisik, dan riwayat perubahan.</p></div>
  <div class="actions no-print">
-  <button class="btn primary" onclick="saveLocal()">Simpan Draft</button>
-  <button class="btn green" onclick="exportCSV()">Export CSV</button>
-  <button class="btn dark" onclick="window.print()">Cetak / PDF</button>
+ <button class="btn primary" onclick="saveLocal()">Simpan Draft</button>
+ <button class="btn green" onclick="exportCSV()">Export CSV</button>
+ <button class="btn dark" onclick="window.print()">Cetak / PDF</button>
  </div>
 </div>
 
-<div class="notice"><b>REAL-TIME CONTROL:</b> <span id="liveStatus">System active</span> • <span id="lastUpdate">Last update 20.27.38</span><br><b>Catatan audit:</b> tampilan ini dirancang mengikuti prinsip pengendalian dokumen dan bukti objektif yang umum digunakan dalam audit sistem manajemen. Ini adalah desain formulir, bukan pernyataan sertifikasi atau kepatuhan ISO.</div>
+<div class="notice"><b>REAL-TIME CONTROL:</b> <span id="liveStatus">System active</span> • <span id="lastUpdate">Last update —</span><br><b>Catatan audit:</b> tampilan ini dirancang mengikuti prinsip pengendalian dokumen dan bukti objektif yang umum digunakan dalam audit sistem manajemen. Ini adalah desain formulir, bukan pernyataan sertifikasi atau kepatuhan ISO.</div>
 
 <div id="dashboard" class="tab active">
  <div class="kpis">
-  <div class="kpi info"><small>TOTAL ASET</small><b id="kTotal">5</b></div>
-  <div class="kpi ok"><small>KONDISI BAIK</small><b id="kGood">2</b></div>
-  <div class="kpi warn"><small>PERLU PERBAIKAN</small><b id="kRepair">3</b></div>
-  <div class="kpi"><small>SELISIH STOCK</small><b id="kDiff">0</b></div>
-  <div class="kpi info"><small>GPS TERVALIDASI</small><b id="kGps">0</b></div>
+ <div class="kpi info"><small>TOTAL ASET</small><b id="kTotal">0</b></div>
+ <div class="kpi ok"><small>KONDISI BAIK</small><b id="kGood">0</b></div>
+ <div class="kpi warn"><small>PERLU PERBAIKAN</small><b id="kRepair">0</b></div>
+ <div class="kpi"><small>SELISIH STOCK</small><b id="kDiff">0</b></div>
+ <div class="kpi info"><small>GPS TERVALIDASI</small><b id="kGps">0</b></div>
  </div>
  <section class="section"><div class="section-title"><h2>Audit Readiness / Evidence Register</h2><span>Objective Evidence</span></div>
  <div class="body"><div class="grid3">
-  <div class="audit-box"><h3>01 • Identifikasi</h3><div class="check"><input type="checkbox" id="c1"><span>Kode aset unik tersedia</span></div><div class="check"><input type="checkbox" id="c2"><span>Lokasi dan PIC teridentifikasi</span></div></div>
-  <div class="audit-box"><h3>02 • Verifikasi</h3><div class="check"><input type="checkbox" id="c3"><span>Foto kondisi fisik tersedia</span></div><div class="check"><input type="checkbox" id="c4"><span>Koordinat GPS tersedia</span></div></div>
-  <div class="audit-box"><h3>03 • Pengendalian</h3><div class="check"><input type="checkbox" id="c5"><span>Status penggunaan diperbarui</span></div><div class="check"><input type="checkbox" id="c6"><span>Riwayat perawatan tercatat</span></div></div>
+ <div class="audit-box"><h3>01 • Identifikasi</h3><div class="check"><input type="checkbox" id="c1"><span>Kode aset unik tersedia</span></div><div class="check"><input type="checkbox" id="c2"><span>Lokasi dan PIC teridentifikasi</span></div></div>
+ <div class="audit-box"><h3>02 • Verifikasi</h3><div class="check"><input type="checkbox" id="c3"><span>Foto kondisi fisik tersedia</span></div><div class="check"><input type="checkbox" id="c4"><span>Koordinat GPS tersedia</span></div></div>
+ <div class="audit-box"><h3>03 • Pengendalian</h3><div class="check"><input type="checkbox" id="c5"><span>Status penggunaan diperbarui</span></div><div class="check"><input type="checkbox" id="c6"><span>Riwayat perawatan tercatat</span></div></div>
  </div></div></section>
- <section class="section"><div class="section-title"><h2>Daftar Aset</h2><span id="countText">5 record</span></div><div class="body"><div style="overflow:auto"><table><thead><tr><th>No</th><th>Kode</th><th>Aset</th><th>Kategori</th><th>Qty</th><th>Kondisi</th><th>Lokasi</th><th>PIC</th><th>Evidence</th></tr></thead><tbody id="assetTable"><tr><td>1</td><td><b>—</b></td><td>—</td><td>Tetap</td><td>1</td><td><span class="badge ok">Baik</span></td><td>—</td><td>—</td><td></td></tr><tr><td>2</td><td><b>—</b></td><td>—</td><td>Tetap</td><td>1</td><td><span class="badge ok">Baik</span></td><td>—</td><td>—</td><td></td></tr><tr><td>3</td><td><b>—</b></td><td>F16 Raptor</td><td>Tetap</td><td>1</td><td><span class="badge warn">Perlu Perbaikan</span></td><td>Alaska</td><td>Joko</td><td></td></tr><tr><td>4</td><td><b>—</b></td><td>—</td><td>Tetap</td><td>1</td><td><span class="badge warn">Perlu Perbaikan</span></td><td>Bandara </td><td>Herman</td><td></td></tr><tr><td>5</td><td><b>—</b></td><td>—</td><td>Tetap</td><td>1</td><td><span class="badge warn">Perlu Perbaikan</span></td><td>Bandara </td><td>Herman</td><td></td></tr></tbody></table></div></div></section>
+ <section class="section"><div class="section-title"><h2>Daftar Aset</h2><span id="countText">0 record</span></div><div class="body"><div style="overflow:auto"><table><thead><tr><th>No</th><th>Kode</th><th>Aset</th><th>Kategori</th><th>Qty</th><th>Kondisi</th><th>Lokasi</th><th>PIC</th><th>Evidence</th></tr></thead><tbody id="assetTable"></tbody></table></div></div></section>
 </div>
 
 <div id="identitas" class="tab">
-<section class="section"><div class="section-title"><h2>A. Identitas Dokumen &amp; Unit</h2><span>Record Identification</span></div><div class="body">
+<section class="section"><div class="section-title"><h2>A. Identitas Dokumen & Unit</h2><span>Record Identification</span></div><div class="body">
 <div class="grid4"><div><label>Nama Proyek / Unit</label><input id="unit"></div><div><label>Lokasi Unit</label><input id="unitLoc"></div><div><label>PIC Aset / GA</label><input id="pic"></div><div><label>Tanggal Pencatatan</label><input id="date" type="date"></div></div>
 </div></section>
-<section class="section"><div class="section-title"><h2>B. Daftar Aset &amp; Inventaris</h2><span>One asset = one record</span></div><div class="body">
+<section class="section"><div class="section-title"><h2>B. Daftar Aset & Inventaris</h2><span>One asset = one record</span></div><div class="body">
 <div class="grid4"><div><label>Kode Aset</label><input id="kode" placeholder="AST-0001"></div><div><label>Nama Aset</label><input id="nama"></div><div><label>Kategori</label><select id="kategori"><option>Tetap</option><option>Bergerak</option></select></div><div><label>Jumlah</label><input id="qty" type="number" min="1" value="1"></div><div><label>Kondisi</label><select id="kondisi"><option>Baik</option><option>Perlu Perbaikan</option><option>Rusak</option></select></div><div><label>Lokasi Detail</label><input id="assetLoc"></div><div><label>PIC / Pengguna</label><input id="assetPic"></div><div><label>Status Penggunaan</label><select id="assetStatus"><option>Aktif</option><option>Kembali</option></select></div></div>
 <div class="actions no-print" style="margin-top:12px"><button class="btn primary" onclick="addAsset()">+ Tambah Record Aset</button><button class="btn" onclick="clearAsset()">Reset</button></div>
 </div></section>
 </div>
 
 <div id="gps" class="tab">
-<section class="section"><div class="section-title"><h2>C. Bukti Objektif — GPS &amp; Foto</h2><span>Field Verification</span></div><div class="body">
-<div class="gps-grid"><div class="metric"><small>Latitude</small><b id="lat">-0.069618</b></div><div class="metric"><small>Longitude</small><b id="lng">109.348856</b></div><div class="metric"><small>Akurasi</small><b id="acc">129 m</b></div><div class="metric"><small>Timestamp</small><b id="gpsTime">18/9/2026, 20.20.48</b></div></div>
+<section class="section"><div class="section-title"><h2>C. Bukti Objektif — GPS & Foto</h2><span>Field Verification</span></div><div class="body">
+<div class="gps-grid"><div class="metric"><small>Latitude</small><b id="lat">—</b></div><div class="metric"><small>Longitude</small><b id="lng">—</b></div><div class="metric"><small>Akurasi</small><b id="acc">—</b></div><div class="metric"><small>Timestamp</small><b id="gpsTime">—</b></div></div>
 <div class="actions no-print"><button class="btn primary" onclick="getGPS()">📍 Ambil GPS Perangkat</button><button class="btn" onclick="openMap()">Buka Peta</button></div>
 <hr style="border:0;border-top:1px solid var(--line);margin:15px 0">
 <div class="camera"><b>TAKE PICTURE — BUKTI FISIK ASET</b><p style="color:var(--muted);font-size:11px">Gunakan kamera perangkat untuk mendokumentasikan kondisi, label, serial number, atau lokasi aset.</p>
 <input id="camera" type="file" accept="image/*" capture="environment" onchange="photo(event)" class="no-print">
-<img id="preview" class="preview" src="blob:null/bee57ab8-8ca7-4f75-9c94-38bde3851959" style="display: block;"><div id="photoInfo" style="color:var(--muted);font-size:10px;margin-top:8px">ChatGPT Image Sep 18, 2026, 02_14_37 AM (1) (1).png • 3198 KB • 18/9/2026, 20.20.57</div></div>
+<img id="preview" class="preview"><div id="photoInfo" style="color:var(--muted);font-size:10px;margin-top:8px"></div></div>
 <label style="margin-top:12px">Keterangan Evidence</label><textarea id="photoNote" placeholder="Contoh: Foto tampak depan aset dan label kode aset."></textarea>
 </div></section>
 </div>
 
 <div id="maintenance" class="tab">
-<section class="section"><div class="section-title"><h2>D. Pemeliharaan &amp; Perawatan</h2><span>Maintenance Record</span></div><div class="body">
+<section class="section"><div class="section-title"><h2>D. Pemeliharaan & Perawatan</h2><span>Maintenance Record</span></div><div class="body">
 <div class="grid4"><div><label>Kode / Nama Aset</label><input id="mAsset"></div><div><label>Jenis</label><select id="mType"><option>Rutin</option><option>Insidental</option></select></div><div><label>Tanggal</label><input id="mDate" type="date"></div><div><label>Hasil</label><select id="mResult"><option>Baik</option><option>Perlu Perbaikan</option></select></div></div>
 <label>Catatan / Tindakan</label><textarea id="mNote"></textarea>
 </div></section>
@@ -164,26 +164,26 @@ input,select,textarea{border-radius:12px!important}
 
 <div id="stock" class="tab">
 <section class="section"><div class="section-title"><h2>E. Stock Opname</h2><span>Physical Verification</span></div><div class="body">
-<div class="grid4"><div><label>Tanggal</label><input id="sDate" type="date"></div><div><label>Jumlah Tercatat</label><input id="recorded" type="number" value="0" oninput="calcDiff()"></div><div><label>Jumlah Fisik</label><input id="physical" type="number" value="0" oninput="calcDiff()"></div><div><label>Selisih</label><input id="diff" readonly=""></div></div>
+<div class="grid4"><div><label>Tanggal</label><input id="sDate" type="date"></div><div><label>Jumlah Tercatat</label><input id="recorded" type="number" value="0" oninput="calcDiff()"></div><div><label>Jumlah Fisik</label><input id="physical" type="number" value="0" oninput="calcDiff()"></div><div><label>Selisih</label><input id="diff" readonly></div></div>
 <label>Keterangan / Tindak Lanjut</label><textarea id="sNote"></textarea>
 </div></section>
 </div>
 
 <div id="disposal" class="tab">
-<section class="section"><div class="section-title"><h2>F. Penghapusan / Kehilangan Aset</h2><span>Exception &amp; Corrective Action</span></div><div class="body">
+<section class="section"><div class="section-title"><h2>F. Penghapusan / Kehilangan Aset</h2><span>Exception & Corrective Action</span></div><div class="body">
 <div class="grid4"><div><label>Aset</label><input id="dAsset"></div><div><label>Alasan</label><input id="dReason"></div><div><label>Tanggal</label><input id="dDate" type="date"></div><div><label>Tindak Lanjut</label><input id="dAction"></div></div>
 <label>Catatan Investigasi / Evidence</label><textarea id="dNote"></textarea>
 </div></section>
 </div>
 
 <div id="approval" class="tab">
-<section class="section"><div class="section-title"><h2>G. Pengesahan &amp; Review</h2><span>Authorization</span></div><div class="body">
+<section class="section"><div class="section-title"><h2>G. Pengesahan & Review</h2><span>Authorization</span></div><div class="body">
 <div class="grid3"><div class="audit-box"><h3>PIC Aset / GA</h3><input placeholder="Nama"><div class="signature"></div><label>Tanggal</label><input type="date"></div><div class="audit-box"><h3>Manajer Unit</h3><input placeholder="Nama"><div class="signature"></div><label>Tanggal</label><input type="date"></div><div class="audit-box"><h3>Direktur Operasional</h3><input placeholder="Nama"><div class="signature"></div><label>Tanggal</label><input type="date"></div></div>
 <div class="notice" style="margin-top:12px">Catatan penting: aset dilarang digunakan untuk kepentingan pribadi. Kehilangan akibat kelalaian menjadi tanggung jawab PIC sesuai ketentuan internal perusahaan.</div>
 </div></section>
 </div>
 
-<div class="footer"><span>Asset &amp; Inventory Control</span><span>Document ID: FM-19 • Revision 01</span></div>
+<div class="footer"><span>Asset & Inventory Control</span><span>Document ID: • Revision 01</span></div>
 </main>
 
 <script>
@@ -225,5 +225,5 @@ window.addEventListener("storage",()=>{
 });
 
 </script>
-
-</body></html>
+</body>
+</html>
